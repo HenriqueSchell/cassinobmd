@@ -12,6 +12,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background-color: #0000009f;
 }
 
 .video-side{
@@ -55,11 +56,25 @@
     font-size: 18pt;
 }
 
-#fundotxt{
+#titulop{
+    font-family: "Playfair Display", serif;
+}
+
+/*#fundotxt{
     position: relative;
     width: 100%;
     background-color: #00000063;
     padding: 20px;
     border-radius: 50px;
+}*/
+
+@media screen and (max-width: 768px) {
+    #fundotxt{
+        background-color: rgba(0, 0, 0, 0.332);
+        max-width: 90%;
+    }
+    #titulo{
+        top: 10%;
+    }
 }
 
