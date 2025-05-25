@@ -35,10 +35,9 @@
 }
 
 #titulo{
-    position: relative;
+    /*position: relative;
     display: flex;
     height: 100vh;
-    justify-content: center;
     align-items: center;
     color: #ffffff;
     padding: 2rem;
@@ -47,13 +46,20 @@
     font-size: 2rem;
     z-index: 1;
     text-align: center;
+    top: 0;
+    bottom: 0;*/
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    color: #ffffff;
+    font-size: 18pt;
 }
 
 #fundotxt{
     position: relative;
     width: 100%;
-    background-color: #0000007c;
-    padding: 10px;
+    background-color: #00000063;
+    padding: 20px;
     border-radius: 50px;
 }
 
