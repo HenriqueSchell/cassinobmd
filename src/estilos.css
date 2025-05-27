@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
 #topo{
     position:relative;
     height: 100vh;
@@ -29,8 +36,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: -1;
 }
@@ -49,43 +56,110 @@
 
 #bg{
     background-color: #1d1d1d;
+    width: 100vw;
 }
+
+
 
 #corpo{
     background-color: rgb(36, 34, 34);
     color:#ffffff;
     width: 80%;
+    height: 100%;
     margin: auto;
     max-width: 1000px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px #000;
-    margin-bottom: 30px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
 .titulos{
-    color:#FF0000;
+    color:#000;
+    padding-bottom: 20px;
+    font-weight: 900;
 }
 
+.bg-title{
+    background: linear-gradient(to right,#FFD700 , rgba(255, 215, 0, 0) 50%); 
+    max-height: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+ 
 .content{
+    position:relative;
     display: flex;
     justify-content: space-between;
+    text-indent: 5%;
+    max-width: 60vw;
 }
 
 .img{
-    width: 50%;
+    position: relative;
+    bottom: 7vh;
+    left: 3vw;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+.recompensa{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sensacao{
+    padding-left: 30px;
+}
+
+.titulo-sensacao{
+    background: linear-gradient(to right,#FFD700 , rgba(255, 215, 0, 0) 80%); 
+}
+
+#rodape{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(151, 4, 4);
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    width: 100vw;
+}
+
+#pi{
+    color: #FFD700;
+}
+
+#img-cerebro{
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.titulo-medicamento{
+    background: linear-gradient(to right,#FFD700 , rgba(255, 215, 0, 0) 60%); 
+}
+
+#img-medicamento{
+    margin-left:100px;
+    border-radius: 15px;
+    width: 50vw;
+    height: 30vh;
+}
+
+section{
+    display: block;
 }
 
 
 
 
 
-
-
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     #fundotxt{
         background-color: rgba(0, 0, 0, 0.332);
         max-width: 90%;
@@ -93,5 +167,15 @@
     #titulo{
         top: 10%;
     }
+    #corpo{
+        width: 100vw;
+    }
+    .img{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px){
+
 }
 
